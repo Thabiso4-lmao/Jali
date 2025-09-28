@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jali Arduino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jali Arduino</h1>
+        
+        <label for="language">Select your language:</label>
+        <select id="language">
+            <option value="af">Afrikaans</option>
+            <option value="en">English</option>
+            <option value="xh">Xhosa</option>
+            <option value="zu">Zulu</option>
+            <option value="st">Sesotho</option>
+            <option value="tn">Setswana</option>
+            <option value="ss">Swati</option>
+            <option value="ve">Venda</option>
+            <option value="nr">Ndebele</option>
+            <option value="ts">Tsonga</option>
+            <option value="nd">Northern Ndebele</option>
+        </select>
+
+        <div class="buttons">
+            <button onclick="sendCommand('LED_ON')">Turn LED On</button>
+            <button onclick="sendCommand('LED_OFF')">Turn LED Off</button>
+        </div>
+
+        <button id="voiceBtn">🎤 Speak Command</button>
+        <p id="status">Status: Not connected</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
